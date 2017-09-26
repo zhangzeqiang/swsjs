@@ -16,7 +16,7 @@
 
 # 引用
     
-    [doT](https://github.com/zhangzeqiang/doT)
-    [Bootstrap](https://github.com/zhangzeqiang/bootstrap)
-    [jquery](https://github.com/zhangzeqiang/jquery)
-    [swsjs](lib/kiss)
+[doT](https://github.com/zhangzeqiang/doT)
+[Bootstrap](https://github.com/zhangzeqiang/bootstrap)
+[jquery](https://github.com/zhangzeqiang/jquery)
+[swsjs](lib/kiss)
