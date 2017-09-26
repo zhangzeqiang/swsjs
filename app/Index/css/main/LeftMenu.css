@@ -1,0 +1,56 @@
+p { color: #0000ff; }
+/*控制菜单箭头*/
+.leftmenu {
+    background-color: #39435c;
+    border: 0px!important;
+}
+.leftmenu > .banner-company {
+    background-color: #283744;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+}
+.leftmenu > .banner-user {
+    height: 70px;
+    padding: 2px;
+    /*display: none;*/
+}
+.leftmenu > .banner-user >.row {
+    padding-top: 5px;
+}
+.leftmenu > .banner-user > .row > .img-box {
+    height: 100%;
+    float: left;
+    margin-left: 18%;
+}
+.leftmenu > .banner-user > .row > .online-status {
+    float: left;padding-top: 6px;padding-left: 8px;color: white;
+}
+.leftmenu > .banner-user > .row > .img-box > img {
+    height: 50px;margin: 2px;padding-left: 10px;
+}
+.leftmenu > .list-group {
+    border: 0px!important;
+}
+.leftmenu > .list-group > .menu {
+    border: 0px;
+}
+.leftmenu > .list-group > .menu > .list-group-item {
+    background-color: #39435c;
+    border: 0px;
+    color: white;
+}
+.leftmenu > .list-group > .menu > .first {
+    text-align: center;
+}
+.leftmenu > .list-group > .menu > .nav-header.collapsed > span.glyphicon-chevron-right:before {
+    content: "\e080";
+}
+.leftmenu > .list-group > .menu > .nav-header > span.glyphicon-chevron-right:before {
+    content: "\e114";
+}
+.leftmenu > .list-group > .menu > .nav-header:hover, .nav-header:focus {
+    color: white!important;
+    background-color: #425164!important;
+}
+

@@ -1,0 +1,42 @@
+<div class="panel panel-success row">
+    <!-- 操作 -->
+    <div class="panel-heading" style="">
+        <h3 class="panel-title">普通用户</h3>
+    </div>
+    <table class="table table-bordered table-striped table-hover" style="width: 100%;">
+        <thead>
+        <tr>
+            {{ for (var key in it.property) { }}
+            <th>{{= it.property[key] }}</th>
+            {{ } }}
+        </tr>
+        </thead>
+        <tbody>
+            {{~it.data :value:index }}
+            <tr>
+            {{ for (var key in value) { }}
+            
+            {{ for (var prokey in it.property) { }}
+            
+            {{? prokey === key }}
+            <td>{{= value[key] }}</td>
+            {{??}}
+            {{?}}
+
+            {{ } }}
+            {{ } }}
+
+            </tr>
+            {{~}}
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        {{ for(var prop=0,pageSize=((typeof(it.pageSize))=='undefined'?20:it.pageSize);prop<it.data.length;prop=(prop+pageSize)){ }}
+        <li><a href="#">{{=(prop/pageSize)+1}}</a></li>
+        {{ } }}
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+</div>

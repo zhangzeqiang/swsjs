@@ -1,0 +1,5 @@
+p { color: #0000ff; }
+div .box { 
+    width: 500px; padding: 100px; heigth: 400px; margin-top: 150px; margin-right: 80px; float: right;
+    background-color: #ffffff;
+}
