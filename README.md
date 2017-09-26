@@ -23,3 +23,7 @@
 [jquery](https://github.com/zhangzeqiang/jquery)
 
 [swsjs](lib/kiss)
+
+# 效果
+
+![image](https://github.com/zhangzeqiang/swsjs/tree/master/img/image.png)
