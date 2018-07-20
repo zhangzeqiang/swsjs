@@ -47,7 +47,6 @@ var __Global = {
     dataDir: "data",
     localsuffix: ".json",
     remotesuffix: "",
-
     // 在线人数
     onlinenumber: 0,
 

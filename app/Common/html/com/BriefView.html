@@ -1,0 +1,22 @@
+<div>
+	<h4 style="margin: 20px 0 20px 0;">{{=it.title}}<a href="#" style="float: right;margin-right: 65px;color: black;">更多>></a></h4>
+	{{ for (var index in it.data) { }}
+	{{? index<=2}}
+	<div class="imgbox">
+		<a href="{{=it.data[index].imagehref}}" target="_blank">
+			<img class="imgsize" src="{{=it.data[index].image}}" alt="{{=it.data[index].imagetext}}">
+			<span class="title">鼠标移过来</span>
+			<span class="hovercaptions">
+			{{=it.data[index].author}}<!--回车什么时候算空格-->
+			</span>
+		</a>
+		<p><a href="{{=it.data[index].titlehref}}" target="_blank" class="itemname">{{=it.data[index].title}}</a></p>
+		<p><a href="{{=it.data[index].descriptionhref}}" target="_blank" class="description">{{=it.data[index].description}}</a></p>
+	</div>
+	{{??}}
+	
+	{{?}}
+
+	{{ } }}
+</div>
+<div style="clear: both;"></div>

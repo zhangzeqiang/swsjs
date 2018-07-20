@@ -1,0 +1,24 @@
+.activityUser
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;   
+    border-color: none;   
+    border-color: transparent;    
+    box-shadow:none;
+}
+
+.activityUser @font-face {
+  font-family: 'iconfont';  /* project id 487798 */
+  src: url('//at.alicdn.com/t/font_487798_p1g1025nr48cl3di.eot');
+  src: url('//at.alicdn.com/t/font_487798_p1g1025nr48cl3di.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_487798_p1g1025nr48cl3di.woff') format('woff'),
+  url('//at.alicdn.com/t/font_487798_p1g1025nr48cl3di.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_487798_p1g1025nr48cl3di.svg#iconfont') format('svg');
+}
+
+.activityUser .iconfont{
+    //at.alicdn.com/t/font_487798_p1g1025nr48cl3di.css}

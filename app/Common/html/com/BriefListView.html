@@ -1,0 +1,53 @@
+<div>
+	<div style="margin-top: 30px;">
+		<a href="#">
+			<div >
+				<button type="button" class="btn btn-warning" style="border-radius: 0;width: 330px;height: 60px;">
+					<p style="font-size: 30px;">我也要发布活动</p>
+				</button>
+			</div>
+		</a>
+	</div>
+
+	<div style="margin: 50px 0 15px 0;">
+		<a href="#">
+			<img src="img/zealand.png" style="width: 320px;height: 300px">
+		</a>
+	</div>
+
+	<div style="margin: 20px 0 0 0;">
+		<h4 style="margin: 20px 0 20px 0;">{{=it.recentTitle}}<a href="#" class="blvmore">更多>></a></h4>
+		{{ for (var index in it.recentData) { }}
+		<div style="margin: 0px 0px 7px 0px">
+			<a href="{{=it.recentData[index].imagehref}}"><img src="{{=it.recentData[index].image}}" alt="{{=it.recentData[index].imagetext}}" class="img"></a>
+			<div>
+				<a href="{{=it.recentData[index].titlehref}}" class="title">{{=it.recentData[index].title}}</a>
+			</div>
+			<div style="margin-top: 20px;">
+				<a href="{{=it.recentData[index].authorhref}}" class="author">{{=it.recentData[index].author}}</a>
+				<p class="time">{{=it.recentData[index].time}}</p>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		{{ } }}
+	</div>
+
+	<div style="margin: 20px 0 0 0;">
+		<a href="#">
+			<img src="img/image2.png" style="width: 300px;height: 120px">
+		</a>
+	</div>
+
+	<div style="margin: 40px 0 0 0;">
+		<h4 style="text-align:left">磨坊一直在努力</h4>
+		<ul style="text-align:left;margin: 0px 0px 5px 13px;padding: 0px;">
+			{{for (var index in it.ulstrive) { }}
+			<li class="point"><a href="{{=it.ulstrive[index].titlehref}}"  style="color: black;">{{=it.ulstrive[index].title}}</a></li>
+			{{ } }}
+		</ul>
+	</div>
+
+
+</div>
+
+

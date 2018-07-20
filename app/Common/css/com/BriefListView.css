@@ -1,0 +1,32 @@
+.img{
+    float: left;
+    width:60px; 
+    height:60px;
+    border: none;
+    padding: 0;
+    background:none;
+}
+.title{
+	color: black;
+	font-size: 17px;
+	margin-left: 15px;
+}
+.author{
+	color: black;
+	font-size: 13px;
+	margin-left: 15px;
+}
+.time{
+	float: right;
+	margin-right: 85px;
+	color: DarkGray;
+}
+.blvmore{
+	float: right;
+	color: black;
+	margin-right: 15px;
+}
+.point{
+	list-style-type:square;
+    color:ForestGreen;
+}

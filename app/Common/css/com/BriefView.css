@@ -1,0 +1,103 @@
+.imgbox {
+    width:312px; 
+    margin: 0 50px 0 0; /*上右下左*/
+    overflow: hidden;/*设置了弹出的文字内容不会超出图片范围，若超出则会有滚动条*/
+    float: left;
+}
+
+.imgbox > a {
+    text-decoration: line-through; /*文字修饰，但是好像没卵用*/
+    float: left;
+    position: relative;
+}
+
+.imgbox .itemname{
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 20px 0px 5px 0px;/*下的大小好像没用*/
+    color: black;
+}
+
+.imgbox .description{
+    font-size: 15px;
+    color:  #808080;
+    width: 100%;
+    height: auto;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+
+.imgbox a:hover {  /*css命名看不懂*/
+    cursor: pointer; /*鼠标光标——Pointer*/
+}
+
+/*背景图样式*/
+.imgbox a img {
+    float: left;
+    width:310px; 
+    height:185px;
+    border: none;
+    padding: 0;
+    background:none;
+}
+
+/*提示字样式*/
+.imgbox a .title {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 1.3em;
+    color: #333;
+    background: #fff;
+    padding: 5px 10px;
+    filter:alpha(opacity=65%); /*透明过滤，没什么用*/
+    opacity:.65; /*没什么用*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";/*兼容IE的过滤器*/
+}
+
+/*这是啥*/
+.imgbox a .hovercaptions {
+    display: none;
+}
+
+
+/*以下是触发事件*/
+.imgbox a:hover .title {
+    visibility: hidden;/*原本字是否消失*/
+}
+
+/*滑过的背景样式*/
+.imgbox a:hover .hovercaptions{
+    display: block;
+    font-size: 1.2em;
+    padding: 10px;
+    background: #fff;
+    filter:alpha(opacity=75);
+    opacity:.75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    color: red;/*字体颜色*/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 0;
+    width: 480px;
+    border-top: none;
+}
+
+/*滑过标题字体样式*/
+.imgbox a:hover .hovercaptions strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size:1.5em;
+}
+
+
+
+/*触发事件结束*/
+/*文字标题样式*/
+.nexttitle{
+    position: relative;
+    top: 15px;
+    font-size: 1.2em;
+}

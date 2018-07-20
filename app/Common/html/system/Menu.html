@@ -1,0 +1,62 @@
+<div style="width: 100%;margin: 0px;" class='row'>
+  <div style='float: left;display: flex;height: 100%;padding: 0;' class='col-md-8 col-lg-8 col-sm-8 col-xs-8'>
+    <div style='margin: auto;width: 100%;' class='row'>
+      <div class="btn-group col-sm-3 col-md-3 col-sm-3 col-xs-3" role="group" style="float: left;padding: 0px;"> 
+        <button type="button" style="width: 100%;border-Radius: 0px;" class="btn btn-default btn-lg bn-menu-color">
+          <span><a class="tip" href="home.html">{{=it.home}}</a></span>
+        </button>
+      </div>
+    
+      {{ for (var index in it.data) { }}
+
+      <div class="btn-group col-sm-3 col-md-3 col-sm-3 col-xs-3" style="float: left;padding: 0px;">
+        <button class="btn btn-default btn-lg bn-menu-color dropdown-toggle" style="width: 100%;border-Radius: 0px;" data-toggle="dropdown">
+          <span class="tip">{{=it.data[index].name}}</span> <span class="caret"></span>
+        </button>
+        
+        {{? typeof(it.data[index].items) === 'object'}}
+        <ul class="dropdown-menu">
+          {{ for (var itemsindex in it.data[index].items) { }}
+          <dl>
+            <dt ><a target='_blank' href="{{=it.data[index].items[itemsindex].href}}">{{=it.data[index].items[itemsindex].name}}</a></dt>
+            
+            {{? typeof(it.data[index].items[itemsindex].values) === 'object'}}
+            <dd>
+              {{ for (var valuesindex in it.data[index].items[itemsindex].values) { }}
+              
+              <a target='_blank' href="{{=it.data[index].items[itemsindex].values[valuesindex].href}}">{{=it.data[index].items[itemsindex].values[valuesindex].name}}</a>
+              
+              {{? !(valuesindex==(it.data[index].items[itemsindex].values.length-1))}}
+              |
+              {{?}}
+
+              {{ } }}
+            </dd>
+            {{?}}
+
+            {{? !(itemsindex==(it.data[index].items.length-1))}}
+            <li role="seprator" class="divider"></li>
+            {{?}}
+
+          </dl>
+          {{ } }}
+        </ul>
+
+        {{??}}
+        {{?}}
+      </div>
+
+      {{ } }}
+    </div>
+  </div>
+
+  <div class='col-md-4 col-lg-4 col-xs-4 col-sm-4' style="float:right;height: 100%;display: flex;text-align: center;padding: 0 10px 0 10px;" >
+    <div class="input-group" style="margin: auto;">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div>
+  </div><div style="clear: both"></div>
+</div>
+

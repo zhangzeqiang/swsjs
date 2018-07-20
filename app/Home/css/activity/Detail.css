@@ -1,0 +1,97 @@
+/*轮播栏渐变样式*/
+.activityDetail .carousel-fade .carousel-inner .item{  
+    opacity:0;  
+    -webkit-transition-property:opacity ;  
+    -moz-transition-property:opacity ;  
+    -ms-transition-property:opacity ;  
+    -o-transition-property:opacity ;  
+    transition-property:opacity ;
+}
+.activityDetail .carousel-fade .carousel-inner .active{  
+    opacity: 1;
+}
+.activityDetail .carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{  
+    left: 0;  
+    opacity: 0;
+}
+.activityDetail .carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+/*鼠标光标——Pointer*/
+.activityDetail img:hover {
+    cursor: pointer; 
+}
+.activityDetail .scrollBar .switch{
+    border:1px solid red; 
+}
+
+.activityDetail .scrollBar .picture .slide_img{
+    height: 60px;
+    width: 82px;
+    margin: 10px 12px 0 0;
+}
+
+
+.activityDetail .collection_button{
+    color: orange;
+    border: 2px solid orange;
+    background-color: white;
+
+    height: 35px;
+    margin: 2px 0 0 130px;
+    padding:2px 10px;
+
+    border-radius: 20px; 
+
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s; /* Safari 和 Chrome */
+    transition-duration: 0.5s;
+}
+
+
+.activityDetail .collection_button_event:hover {
+    background-color: green;
+    border: 2px solid green;
+
+}
+
+.activityDetail button:active {
+    border: 5px solid red;
+}
+
+.activityDetail  
+.btn:focus/*,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus*/ {
+    outline: none;   
+    border-color: none;   
+    /*border-color: transparent;    
+    box-shadow:none;*/
+}
+/*.activityDetail  .slide_buutton_left{
+    height: 60px;
+    margin: 10px 0 0 0;
+    padding: 4px 4px;
+    z-index: 1; 设置界面显示优先级，显示在上层
+    position: absolute;
+}
+
+.activityDetail  .slide_buutton_right{
+    height: 60px;
+    margin: 10px 0 0 0;
+    padding: 4px 4px;
+    z-index: 1;
+    position: absolute;
+    left: 526px;
+}*/
+
+.carousel-inner > .item > a > img {
+  display: inline;
+  max-width: 100%;
+  height: auto;
+}

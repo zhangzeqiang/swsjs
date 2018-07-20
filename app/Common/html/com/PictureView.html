@@ -1,0 +1,77 @@
+<div style="margin: 30px 0 20px 0">
+	<h4>热门话题</h4>
+</div>
+
+<div>
+	<div style="float: left;display: inline;margin-right: 25px;">
+		<a href="{{=it.imagehref}}"><img src="{{=it.image}}"></a>
+	</div>
+	<div style="float: left;width: 325px;line-height: 18px;">
+		<a href="{{=it.titlehref}}" style="color: #2b2b2b;font-size: 1.2em;">{{=it.title}}</a>
+		<p style="color: #9c9c9c;margin:5px 0; ">{{=it.description}}</p>
+		<ul style="text-align:left;margin: 0px 0px 5px 13px;padding: 0px;">
+			{{ for (var index in it.ultitle) { }}
+			<li class="pvpoint"><a href="{{=it.ultitle[index].titlehref}}"  style="padding-left: 3px;line-height: 20px;color: #778899;">{{=it.ultitle[index].title}}</a></li>
+			{{ } }}
+		</ul>
+	</div>
+</div>
+<div style="clear: both;"></div>
+
+
+<div style="margin: 60px 0px 25px 0px;">
+	<p style="display: inline;">更多热门：&nbsp;&nbsp;</p>
+	{{ for (var index in it.morepopular) { }}
+	
+	{{? !(index==(it.morepopular.length-1))}}
+	<a href="{{=it.morepopular[index].titlehref}}" style="color: black;">{{=it.morepopular[index].title}}</a>
+	&nbsp;| 
+	{{??}}
+	<a href="{{=it.morepopular[index].titlehref}}" style="color: red;">{{=it.morepopular[index].title}}</a>
+	{{?}}
+
+	{{ } }}
+
+</div>
+
+<div>
+	<h4>新鲜出炉</h4>
+</div>
+
+<div style="margin: 0px;">  <!--<div style="margin:20px 0px 0px 0px">会弹到上面-->
+  {{ for (var index in it.data) { }}
+  <div style='float: left;margin:10px 40px 20px 0px;padding: 0px;'>
+    <a href="{{=it.data[index].imagehref}}"><img style="width: 200px;height: 200px;" src={{=it.data[index].image}} alt="图片消失了呢！？"></a>
+
+    <div>
+      <div style="float: left;margin: 5px 0px 0px 0px">
+        <a href="{{=it.data[index].titlehref}}" style="color:DimGray">{{=it.data[index].title}}</a>
+      </div>
+      <div style='clear:both;'></div>
+
+      <div style="float: left;margin: 5px 0px 0px 0px">
+        <a href="{{=it.data[index].authorhref}}" style="color:DimGray">{{=it.data[index].author}}</a>
+      </div>
+      <div style="float: right;margin: 5px 0px 5px 0px">
+        <p style="display:inline;color:DimGray">来自：</p>
+        <a href="{{=it.data[index].typehref}}" style="color:DimGray">{{=it.data[index].type}}</a>
+      </div>
+      <div style='clear:both;'></div>
+
+      <div>
+          <a style="float: left;" href="#" class="btn btn-success btn-sm" role="button">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>{{=it.data[index].clicknumber}}
+          </a><div style='clear:both;'></div>
+      </div>
+
+    </div>
+  </div>
+  {{ } }}
+  <div style='clear:both;'></div>
+
+</div>
+
+<div  style="margin: 80px 0 50px 0;">
+	<a href="#"  style="margin: 0 20px 0 0;"><img src="img/baoxian.jpg"></a>
+	<a href="#"><img src="img/mofangapp.jpg"></a>
+</div>

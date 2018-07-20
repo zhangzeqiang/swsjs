@@ -1,6 +1,12 @@
+/*!
+ * Trip-admin1.0 Javascript Library
+ * @Author: John
+ * @function: 表格组件
+ */
 SwsJs.View ({
   "namespace": "Common",
   "alias": "com.Table",
+  "html": require ('../../com/Table.html'),
   init: function () {
     // 默认加载Model作为本页数据
     // this.reload ();

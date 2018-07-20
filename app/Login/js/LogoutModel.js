@@ -1,10 +1,12 @@
 SwsJs.View ({
     "namespace": "Login",
     "alias": "LogoutModel",
-    "html": "",
+    "html": require ('../html/LogoutModel.html'),
     init: function () {
+        console.log ("LogoutModel.js init.");
     },
     afterrender: function () {
+        console.log ("LogoutModel.js afterrender.");
         $("#tipsModel").find (".model-ok").click(function() {
             // 确定
             $("#tipsModel").modal("hide");

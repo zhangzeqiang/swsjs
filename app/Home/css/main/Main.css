@@ -1,0 +1,9 @@
+.percent {
+    width: 1400px;
+    margin: 0 auto;
+}
+.full {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}

@@ -1,0 +1,11 @@
+.dropdown > span .glyphicon-chevron-right:before {
+    content: "\e080";
+}
+.dropdown.open > span .glyphicon-chevron-right:before {
+    content: "\e114";
+}
+.unselectable {
+    -moz-user-select:none;
+    -webkit-user-select: none;       
+    -ms-user-select: none;
+}

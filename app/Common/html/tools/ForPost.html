@@ -1,1 +1,261 @@
-<h1>ForPost</h1>
+<div class="page-header" style='border: 1px solid red;'>
+  <h1 style="float: left;">页头的内容<small>页头的潜在词</small></h1>
+  <div style='clear:both;'></div>
+</div>k
+
+<div style='border: 1px solid red;'>
+  <button style="float: left;" type="button" class="btn btn-danger btn-lg" >
+    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 点此挣钱
+  </button>
+  <div style='clear:both;'></div>
+</div>
+<div style='border: 1px solid red;'>
+  <button style="float: left;" type="button" class="btn btn-success btn-lg" >
+    <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> 美女房间
+  </button>
+  <div style='clear:both;'></div>
+</div>
+<br />
+
+
+<div class="input-group col-xs-6 col-sm-6 col-lg-6 col-md-6">
+  <span class="input-group-addon" id="basic-addon1">🔍搜索</span>
+  <input type="text" class="form-control" placeholder="Search for..." aria-describedby="basic-addon3">
+</div> 
+<br />
+
+
+<div class="row">
+<div class="col-xs-6 col-sm-6 col-xs-6 col-md-6">
+  <div class="input-group">
+    <div class="input-group-btn">
+     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">请选择<span class="caret" ></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">用户id</a></li>
+        <li><a href="#">性别</a></li>
+        <li><a href="#">用户名</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">测试啦啦啦</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  <input type="text" class="form-control" placeholder="Search for..." aria-label="...">
+  <div style='clear:both;'></div>
+  </div>
+</div> <!-- 为输入框组添加按钮需要额外添加一层嵌套，不是 .input-group-addon，而是添加 .input-group-btn 来包裹按钮元素 -->
+ <!-- 由于不同浏览器的默认样式无法被统一的重新赋值，所以才需要这样做。 -->
+</div>
+<br />
+
+
+<div>
+  <p style="float: left;"><span style="color:red;font-size:15px">每页条数</span></p>
+  <div style='clear:both;'></div>
+</div>
+
+<div>
+  <p style="float: left;"><strong style="color:green;font-size:25px">每页条数</strong></p>
+  <div style='clear:both;'></div>
+</div>
+
+<div>
+  <p style="float: left;"><em style="color:grey;font-size:20px">每页条数</em></p>
+  <div style='clear:both;'></div>
+</div>
+
+
+<div class="dropdown" style='border: 1px solid red;'>
+  <strong style="float: left;color:black;font-size:15px;border: solid red 1px;margin-top: 5px;">每页条数:</strong>
+  <button style="float: left;" class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">请选择啦<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li class="dropdown-header">这里是标题哦~</li>
+    <li><a href="#">选择1</a></li>
+    <li><a href="#">选择22</a></li>
+    <li><a href="#">选择333</a></li>
+    <li role="separator" class="divider"></li>
+    <li class="dropdown-header">这里是标题哦~</li>
+    <li><a href="#">选择4444</a></li>
+  </ul>
+  <div style='clear:both;'></div>
+</div>
+<br />
+
+
+<!--路径导航-->
+<div>
+  <ol class="breadcrumb" style="float: left;border: 1px solid red;font-size:20px;">
+    <li><a href="#">Home<span class="badge">4</span></a></li>
+    <li><a href="www.baidu.com">Library</a></li>
+    <li class="active">Data</li>
+  </ol>
+  <div style='clear:both;'></div>
+</div>
+
+
+<!--导航条-->
+<div style="border: 1px solid red;">
+<nav class="navbar navbar-default">
+  <div class="container-fluid" >
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<br />
+
+
+<!--封面哦-->
+<div style="float: right;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div style="width: 1556px;border: solid blue 5px;">
+    <div style="border: 3px solid green">
+      <p style="float: left;"><strong style="color:green;font-size:25px">{{=it.name}}</strong></p>
+      <div style='clear:both;'></div>
+    </div>
+
+    <div style="border: 3px solid red;">
+      {{ for (var index in it.data) { }}
+      <div style='float: left;width: 200px;margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;border: solid red 1px;'>
+        <img style="width: 200px;height: 200px;" src={{=it.data[index].image}} alt="...">
+        <div>
+          <div style="float: left;border: 1px solid red;">
+            <p><a href="www.baidu.com">{{=it.data[index].title}}</a> </p>
+          </div>
+          <div style="float: right;border: 1px solid red;">
+            <p><a href="#">{{=it.data[index].author}}</a></p> 
+          </div><div style='clear:both;'></div>
+          
+          <div style="float: left;border: 1px solid red;">
+            <p><a href="#">{{=it.data[index].type}}</a></p>
+          </div><div style='clear:both;'></div>
+
+          <div style='border: 1px solid red;'>
+            <p>
+              <a style="float: left;" href="#" class="btn btn-success btn-sm" role="button">
+                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>{{=it.data[index].clicknumber}}
+              </a><div style='clear:both;'></div>
+            </p>
+          </div>
+        </div>
+      </div>
+      {{ } }}
+      <div style='clear:both;'></div>
+    </div>
+  </div>
+</div>
+
+
+<br />
+<!--
+//4.清除浮动放在里面和S外面为啥会空行。
+-->
+
+<!--右侧任务栏-->
+<div style="float: left">
+  <div style="width:400px;height:400px;border: dashed black 5px;">
+
+    <div style="border: 3px solid green">
+      <p style="float: left;"><strong style="color:green;font-size:25px">近期活动</strong></p>
+      <p><a href="#" style="float: right;color:brown;font-size:25px">更多>></a> </p>
+      <div style='clear:both;'></div>
+    </div>
+    
+    <div style="border: 3px dotted purple">
+      <div style="width:300px;border: 3px solid red">
+        <img src="img/table5.gif" alt="..." style="float: left;width: 100px;height: 100px;">
+        
+        <div style='border: 1px blue solid;text-align: left;font-size: 20px;'><a href="#">类型</a>|<a href="#">活动名</a></div>
+        <div><a href="#" >作者</a></div>  
+      </div>
+      <div style="float: left;border: 2px solid cyan">
+        <h3 style="float: left;"><a href="#" >题目</a></h3>
+        <div style='clear:both;'></div>      
+      </div>
+    </div>
+
+  </div>
+</div><div style='clear:both;'></div>
+
+
+
+
+
+<div style="float: right">
+  <div style="width:300px;border: dashed black 5px;">
+
+    <div style="border: 3px solid green">
+      <p style="float: left;"><strong style="color:green;font-size:25px">近期活动</strong></p>
+      <p><a href="#" style="float: right;color:brown;font-size:25px">更多>></a> </p>
+      <div style='clear:both;'></div>
+    </div>
+    
+    <div style="border: 3px dotted purple;">
+      <div style="border: 3px solid red">
+        <img src="..." alt="..." style="float: left;width: 200px;height: 200px;">
+        <div style='clear:both;'></div>
+      </div>
+      <div style="border: 2px solid cyan;">
+        <h3 style="float: left;"><a href="#" >题目</a></h3>
+        <div style='clear:both;'></div>
+      </div>
+      <div style="float: left;border: 2px solid cyan;">
+        <p><a href="#" ><h4>作者</h4></a> </p>
+      </div>
+      <div style ="float: right;border: 2px solid cyan;">
+        <p><h4>出发2017-9-18</h4></p>
+      </div><div style='clear:both;'></div>
+    </div>
+
+  </div>
+</div></div><div style='clear:both;'></div>
+
+
+
+
+
