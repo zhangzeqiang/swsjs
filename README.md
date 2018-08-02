@@ -10,8 +10,6 @@
     route: 用户自定义模块引用目录
     views: 交互模块
     models: 数据模型
-    
-    entry: 入口 (入口组件)
 
 ## 2、View+controller层
 ### 1) JS定义
@@ -103,9 +101,7 @@
         // 声明模型
         "models": [
             "UserList",
-        ],
-        // 入口文件
-        "entry": "main.Main"
+        ]
     });
     app.run ();
 
